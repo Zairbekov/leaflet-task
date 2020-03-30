@@ -55,7 +55,7 @@ export class MainComponent implements OnInit {
     this.map = L.map('map').setView([37.71859032558816, 55.54687500000001], 3);
     L.tileLayer(this.mapUrl, {}).addTo(this.map);
     this.markerGroup = L.featureGroup().addTo(this.map);
-    this.markerGroup.on('click', e => {
+    this.markerGroup.on('mouseover', e => {
       this.dataSource.data[0].children.forEach(child => {
           child.children.forEach(arg => {
             if (arg.data[0] === e.layer._latlng.lat && arg.data[1] === e.layer._latlng.lng) {
