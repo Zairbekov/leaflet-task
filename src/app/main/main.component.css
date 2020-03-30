@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  max-width: 50%;
+  min-width: 400px;
+  height: 700px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#map {
+  width: 700px;
+  height: 700px;
+}
+
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.card {
+  max-width: 150px;
+  margin-left: 10px;
+  float: left;
+}
+
+
